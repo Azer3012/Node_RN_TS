@@ -21,6 +21,7 @@ app.get('/ping',(req:Request,res:Response)=>{
 
 app.use('/user',userRoutes)
 
+
 app.listen(PORT,()=>{
     console.log("app listening")
 })

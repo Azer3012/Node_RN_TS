@@ -26,3 +26,16 @@ export interface ICategory{
     icon:IIcon,
     
 }
+
+export interface ITask{
+    _id:string,
+    name:string,
+    categoryId:string,
+    user:string,
+    isCompleted:boolean,
+    isEditable:boolean,
+    date:string,
+    createdAt:string,
+    updatedAt:string,
+}
+

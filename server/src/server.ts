@@ -2,6 +2,7 @@ import express, { Request, Response } from "express";
 import connectToDB from "./db";
 import userRoutes from "./routes/userRoutes";
 import categoryRoutes from "./routes/categoryRoutes";
+import taskRoutes from "./routes/taskRoutes";
 
 const app=express();
 
@@ -22,6 +23,7 @@ app.get('/ping',(req:Request,res:Response)=>{
 
 app.use('/user',userRoutes)
 app.use('/category',categoryRoutes);
+app.use("/tasks",taskRoutes)
 
 
 app.listen(PORT,()=>{

@@ -17,7 +17,12 @@ const taskSchema=new mongoose.Schema({
     },
     isCompleted:{
         type:Boolean,
-        required:true,
+        default:false,
+        
+    },
+    isEditable:{
+        type:Boolean,
+        default:false ,
         
     },
     date:{
@@ -28,3 +33,8 @@ const taskSchema=new mongoose.Schema({
 {
     timestamps:true
 })
+
+const Task=mongoose.model("Task",taskSchema)
+
+
+export default Task;

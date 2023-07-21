@@ -6,7 +6,7 @@ import jwt from 'jsonwebtoken'
 import { IUser } from "../types";
 
 
-const getUserToken = (_id: string | Types.ObjectId) => {
+const getUserToken = (_id:string|Types.ObjectId) => {
     const authentificatedUserToken = jwt.sign(
         { _id },
         "express",

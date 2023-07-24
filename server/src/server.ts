@@ -12,14 +12,10 @@ const PORT=1337;
 
 connectToDB();
 
-
-
-
-
-
 app.get('/ping',(req:Request,res:Response)=>{
     res.send("Pong")
 })
+
 
 app.use('/user',userRoutes)
 app.use('/category',categoryRoutes);

@@ -1,12 +1,18 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import React, { FC } from 'react';
 
-interface Props{}
+interface ButtonProps{
+    onPress:()=>void,
+    title:string
+}
 
-const Button:FC<Props> = ():JSX.Element => {
+const Button:FC<ButtonProps> = ({onPress,title}):JSX.Element => {
   return (
     <View style={styles.container}>
-        <Text>Button</Text>
+        
+        <TouchableOpacity onPress={onPress}>
+            <Text>{title}</Text>
+        </TouchableOpacity>
     </View>
   )
 }

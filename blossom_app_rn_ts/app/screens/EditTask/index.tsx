@@ -1,18 +1,21 @@
 import { StyleSheet, View } from 'react-native';
 import React, { FC } from 'react';
+import SafeAreaWrapper from '../../shared/SafeAreaWrapper';
 
-interface Props{}
+interface Props { }
 
-const EditTask:FC<Props> = ():JSX.Element => {
+const EditTask: FC<Props> = (): JSX.Element => {
   return (
-    <View style={styles.container}>
+    <SafeAreaWrapper>
+      <View style={styles.container}>
 
-    </View>
+      </View>
+    </SafeAreaWrapper>
   )
 }
 
 export default EditTask;
 
 const styles = StyleSheet.create({
-  container:{}
+  container: {}
 })

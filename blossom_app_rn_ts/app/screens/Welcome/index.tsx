@@ -1,18 +1,21 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React, { FC } from 'react';
+import SafeAreaWrapper from '../../shared/SafeAreaWrapper';
 
-interface Props{}
+interface Props { }
 
-const Welcome:FC<Props> = ():JSX.Element => {
+const Welcome: FC<Props> = (): JSX.Element => {
   return (
-    <View style={styles.container}>
+    <SafeAreaWrapper>
+      <View style={styles.container}>
         <Text>Welcome</Text>
-    </View>
+      </View>
+    </SafeAreaWrapper>
   )
 }
 
 export default Welcome;
 
 const styles = StyleSheet.create({
-  container:{}
+  container: {}
 })

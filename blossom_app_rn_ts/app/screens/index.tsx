@@ -1,0 +1,8 @@
+export {default as Welcome} from './Welcome'
+export {default as SignIn} from './SingIn'
+export {default as SignUp} from './SingUp'
+export {default as Home} from './Home'
+export {default as EditTask} from './EditTask'
+export {default as Today} from './Today'
+export {default as Categories} from './Categories'
+export {default as Category} from './Category'
